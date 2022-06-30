@@ -1,45 +1,84 @@
-// let a = 22.49 // number
-// let b = 22.50 // number
+// let arr = [1,2,3,4,5,6,7,8,9,10]
 
-// int = parseInt(int)
-// int = parseFloat(int)
-// int = +int
-// Math.ceil(int) // up
-// Math.floor(int) // down
-// Math.round(int) // logical
-// int.toFixed(1)
+// let even = []
+// let odd = []
 
-// a > b
+// for(let item of arr) {
+//     if(item % 2 === 0) {
+//         even.push(item)
+//     } else {
+//         odd.push(item)
+//     }
+// }
 
-// Math.max(a, b)
-// Math.min(a,b)
-// Math.pow(7,2)
-// **
-
-// Math.random()
-// let rnd = Math.random()
-    
+// console.log(even, odd);
 
 
-
-// console.log(rnd);
-
-
-// increment
-// let int = 0
-
-// int = int + 1
-// int += 1
-// int++ // postFix
-// ++int // prefix
-
-// decrement
-// int = int - 1
-// int -= 1
-// int-- // postFix
-// --int // prefix
-
-// console.log(int);
+// let arr = [1,2,3,'string', 'hello world', true, false, [], {}, null]
 
 
-// github
+// let obj = {
+//     string: [],
+//     number: [],
+//     boolean: [],
+//     object: []
+// }
+
+
+
+
+// let 
+
+
+// let obj = {
+//     a: 10,
+//     b: 20,
+//     c: 30,
+//     d: 40
+// }
+
+// for(let key in obj) {
+//     console.log(
+//         obj[key]
+//     );
+// }
+
+
+let arr = [
+    {
+        name: 'morgen'        
+    },
+    {
+        name: 'klava koka'        
+    },
+    {
+        name: 'baskov'        
+    },
+    {
+        name: 'filip'        
+    },
+    {
+        name: 'yulduz'        
+    },
+    {
+        ot: 'leps'        
+    },
+    {
+        name: 'skriptonit'        
+    }
+]
+
+
+for(let item of arr) {\
+    if(!item.name) {
+        let name = Object.values(item)[0]
+        let key = Object.keys(item)[0]
+        
+        delete item[key]
+
+        item.name = name
+    } 
+}
+
+
+console.log(arr);
