@@ -1,84 +1,149 @@
-// let arr = [1,2,3,4,5,6,7,8,9,10]
-
-// let even = []
-// let odd = []
-
-// for(let item of arr) {
-//     if(item % 2 === 0) {
-//         even.push(item)
-//     } else {
-//         odd.push(item)
-//     }
-// }
-
-// console.log(even, odd);
-
-
-// let arr = [1,2,3,'string', 'hello world', true, false, [], {}, null]
-
+// for
+// for of 
+// forEach
+// filter
+// do while
+// while
 
 // let obj = {
-//     string: [],
-//     number: [],
-//     boolean: [],
-//     object: []
+//     a: 1,
+//     b: 2,
+//     c: 3
 // }
 
-
-
-
-// let 
-
-
-// let obj = {
-//     a: 10,
-//     b: 20,
-//     c: 30,
-//     d: 40
-// }
+// console.log(
+//     Object.values(obj)
+// );
 
 // for(let key in obj) {
 //     console.log(
-//         obj[key]
+//         key
 //     );
 // }
+
+// let arr = [
+//     {
+//         name: 'alisher', 
+//         surname: 'adams'
+//     },
+//     {
+//         name: 'amin', 
+//         surname: 'toshpulatov'
+//     },
+//     {
+//         name: 'amina', 
+//         surname: 'fatkul'
+//     },
+//     {
+//         name: 'kumush', 
+//         surname: 'toshpulatov'
+//     },
+//     {
+//         name: 'amir', 
+//         surname: 'adams'
+//     },
+//     {
+//         name: 'ula', 
+//         surname: 'toshpulatov'
+//     },
+//     {
+//         name: 'artyom', 
+//         surname: 'fatkul'
+//     },
+//     {
+//         name: 'muxammadshox', 
+//         surname: 'fatkul'
+//     }
+// ]
+
+// let surnames = [
+//     {
+//         surname: 'fatkul',
+//         count: 0
+//     },
+//     {
+//         surname: 'toshpulatov',
+//         count: 0
+//     },
+//     {
+//         surname: 'adams',
+//         count: 0
+//     }
+// ]
+
+// for(let i = 1; i <= 10; i++) {
+//     for(let k = 1; k <= 10; k++) {
+//         document.write('* <br>' )
+//         // document.write(`${i} * ${k} = ${i * k} <br>`)
+//     }
+//     // document.write(`<hr>`)
+// }
+
+// for(let i = 5; i >= 0; i--) {
+//     for(let k = 0; k <= i; k++) {
+//         document.write('* ')
+//     }
+//     document.write('<br>')
+// }
+
+
+// *****
+// ****
+// ***
+// **
+// *
 
 
 let arr = [
     {
-        name: 'morgen'        
+        name: 'moloko',
+        type: 'milk'
     },
     {
-        name: 'klava koka'        
+        name: 'banana',
+        type: 'fruit'
     },
     {
-        name: 'baskov'        
+        name: 'govyadina',
+        type: 'meat'
     },
     {
-        name: 'filip'        
+        name: 'tvorog',
+        type: 'milk'
     },
     {
-        name: 'yulduz'        
+        name: 'sir',
+        type: 'milk'
     },
     {
-        ot: 'leps'        
+        name: 'kuryatina',
+        type: 'meat'
     },
     {
-        name: 'skriptonit'        
+        name: 'persik',
+        type: 'fruit'
+    },
+    {
+        name: 'smetana',
+        type: 'milk'
+    },
+    {
+        name: 'ananas',
+        type: 'fruit'
     }
 ]
 
-
-for(let item of arr) {\
-    if(!item.name) {
-        let name = Object.values(item)[0]
-        let key = Object.keys(item)[0]
-        
-        delete item[key]
-
-        item.name = name
-    } 
-}
-
-
-console.log(arr);
+let categories = [
+    {
+        name: 'meat',
+        arr: []
+    },
+    {
+        name: 'fruit',
+        arr: []
+    },
+    {
+        name: 'milk',
+        arr: []
+    }
+]
